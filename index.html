@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cxnemax</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+</head>
+
+<body>
+    <div class="main-container">
+        <header class="profile container">
+            <!-- Theme button -->
+            <i class='bx bx-moon change-theme' id="theme-button"></i>
+            <!-- profile -->
+            <div class="profile__container grid">
+                <div class="profile__data">
+                    <div class="profile__border">
+                        <div class="profile__perfil">
+                            <img src="image/profile-img.png" alt="Cxnemax-logo">
+                        </div>
+                    </div>
+                    <h2 class="profile__name">Cxnemax</h2>
+                    <h3 class="profile__profession">movies that you love</h3>
+                </div>
+                <div class="profile__info grid">
+                    <div class="profile__info-group">
+                        <h3 class="profile__info-number">
+                            10+
+                        </h3>
+                        <p class="profile__info-description">
+                            Years of <br> top notch service
+                        </p>
+                    </div>
+                    <div class="profile__info-group">
+                        <h3 class="profile__info-number">
+                            High Definition
+                        </h3>
+                        <p class="profile__info-description">
+                            video<br>quality
+                        </p>
+                    </div>
+                    <div class="profile__info-group">
+                        <h3 class="profile__info-number">
+                            Very
+                        </h3>
+                        <p class="profile__info-description">
+                            emersive <br> experience
+                        </p>
+                    </div>
+                </div>
+                <div class="profile__buttons">
+                    <a download="" href="" class="button">
+                        Download Brochure <i class="ri-download-2-fill"></i>
+                    </a>
+                </div>
+            </div>
+        </header>
+
+        <!-- main -->
+        <main class="main">
+
+            <section class="filters__content">
+                <div class="wrapper">
+                    <div class="wrapper-img">
+                        <!-- Swiper -->
+                        <swiper-container class="mySwiper" pagination="true" pagination-clickable="false"
+                            navigation="true" space-between="30" centered-slides="true" autoplay-delay="2500"
+                            autoplay-disable-on-interaction="false">
+                            <swiper-slide><img src="image/MOVIES.jpg" alt="movie poster"></swiper-slide>
+                            <swiper-slide><img src="image/MOVIES.jpg" alt="movie poster"></swiper-slide>
+                            <swiper-slide><img src="image/MOVIES.jpg" alt="movie poster"></swiper-slide>
+                            <swiper-slide><img src="image/MOVIES.jpg" alt="movie poster"></swiper-slide>
+                            <swiper-slide><img src="image/MOVIES.jpg" alt="movie poster"></swiper-slide>
+                            <swiper-slide><img src="image/MOVIES.jpg" alt="movie poster"></swiper-slide>
+                            <swiper-slide><img src="image/MOVIES.jpg" alt="movie poster"></swiper-slide>
+                            <swiper-slide><img src="image/MOVIES.jpg" alt="movie poster"></swiper-slide>
+                            <swiper-slide><img src="image/MOVIES.jpg" alt="movie poster"></swiper-slide>
+                        </swiper-container>
+                    </div>
+                    <div class="wrapper-info">
+                        <div class="wrapper-text">
+                            <h1>
+                                Innovation happens
+                                when people are
+                                free to think.
+                            </h1>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam nulla quae inventore
+                                excepturi,
+                                rem hic mollitia, libero quidem obcaecati repellendus fuga officia, iste cum. Libero
+                                laudantium
+                                magni natus cupiditate necessitatibus repellendus illo asperiores provident est
+                                consectetur
+                                laborum quisquam, accusamus fugiat quia aut perspiciatis
+                            </p>
+                        </div>
+
+                        <div class="wrapper-buttons">
+                            <button class="filters__button filters-tab-active" data-target="#projects">
+                                Home
+                            </button>
+                            <button class="filters__button" data-target="#skills">
+                                Booking
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="filters container">
+                <div class="skills__content" data-content id="skills">
+                    <div class="movie-container">
+                        <label> Movie list:</label>
+                        <select id="movie">
+                            <option value="3250">OPPENHEIMER(N.3250)
+                            <option>
+                            <option value="3350">MARIO BROS (N.3350)</option>
+                            <option value="3250">LITTLE MERMAID (N.3250)</option>
+                            <option value="2260">THE WANDERING EARTH (N.2260)</option>
+                        </select>
+                    </div>
+
+                    <div class="booking-container">
+                        <div class="screen">
+                            <P>40 SEAT CAPACITY</P>
+                            <p class="text">
+                                You have selected <span id="count">0</span> seat for a price of RS.<span
+                                    id="total">0</span>
+                            </p>
+                        </div>
+                        <div class="row-container">
+                            <div class="row">
+                                <div class="seat">A1</div>
+                                <div class="seat">A2</div>
+                                <div class="seat">B1</div>
+                                <div class="seat">B2</div>
+                                <div class="seat">B3</div>
+                                <div class="seat">B4</div>
+                                <div class="seat">C1</div>
+                                <div class="seat">C2</div>
+                            </div>
+
+                            <div class="row">
+                                <div class="seat">A3</div>
+                                <div class="seat">A4</div>
+                                <div class="seat">B5</div>
+                                <div class="seat sold">B6</div>
+                                <div class="seat sold">B7</div>
+                                <div class="seat">B8</div>
+                                <div class="seat">C3</div>
+                                <div class="seat">C4</div>
+                            </div>
+                            <div class="row">
+                                <div class="seat">A5</div>
+                                <div class="seat">A6</div>
+                                <div class="seat">B9</div>
+                                <div class="seat">B10</div>
+                                <div class="seat">B11</div>
+                                <div class="seat">B12</div>
+                                <div class="seat sold">C5</div>
+                                <div class="seat sold">C6</div>
+                            </div>
+                            <div class="row">
+                                <div class="seat">A7</div>
+                                <div class="seat">A8</div>
+                                <div class="seat">B13</div>
+                                <div class="seat">B14</div>
+                                <div class="seat">B15</div>
+                                <div class="seat">B16</div>
+                                <div class="seat">C7</div>
+                                <div class="seat">C8</div>
+                            </div>
+                            <div class="row">
+                                <div class="seat sold">A9</div>
+                                <div class="seat sold">A10</div>
+                                <div class="seat">B17</div>
+                                <div class="seat">B18</div>
+                                <div class="seat">B19</div>
+                                <div class="seat">B20</div>
+                                <div class="seat">C9</div>
+                                <div class="seat">C10</div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    <!-- header -->
+
+
+    <!-- footer -->
+    <footer class="foter container">
+        <span class="footer__copy">
+            &#169;Cxnemax by AkaoseOgochukwu. All rights reserved
+        </span>
+    </footer>
+    <script src="script.js"></script>
+
+    <script src="scrollreveal.min.js"></script>
+
+    <script src="main.js"></script>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+
+</body>
+
+</html>
